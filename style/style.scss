@@ -1,5 +1,11 @@
-$bgColor: green;
+$bgColor: rgb(233, 229, 229);
+
+// Navbar 
+$navLinkHover: white;
 
 body{
     background-color: $bgColor;
+}
+nav, a:hover{
+    color: $navLinkHover;
 }
