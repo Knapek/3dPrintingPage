@@ -1,11 +1,15 @@
 body {
-  background-color: #e9e5e5;
+  background-color: #212529;
 }
 
-nav, a:hover {
-  color: white;
+.navShadowScroll {
+  box-shadow: 0 2px 6px 0 rgba(136, 133, 133, 0.377);
 }
 
 .asd {
   margin-top: 1500px;
+}
+
+.logo-container {
+  margin-top: 120px;
 }
