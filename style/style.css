@@ -13,3 +13,8 @@ body {
 .logo-container {
   margin-top: 120px;
 }
+
+#nav-logo-container-id {
+  width: 150px;
+  height: 40px;
+}
