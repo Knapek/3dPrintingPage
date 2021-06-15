@@ -8,6 +8,9 @@ $carouselImgWidth: 1100px;
 
 body{
     background-color: $bgColor;
+    background-image: url(../img/background/bgimage.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 //Navbar shadow class. Scroll event listener implemented.
@@ -21,7 +24,8 @@ body{
 
 //First div container with logo. It has to be moved from top to appear under navbar.
 .logo-container{
-    margin-top: 120px;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
 
 //Fixed dimentions container for logo at navigation bar. Logo apear in this place when page is scroled down.

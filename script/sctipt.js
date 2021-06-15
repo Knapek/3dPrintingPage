@@ -5,7 +5,7 @@ document.addEventListener('scroll', function()
    var logoImgNode = document.createElement('img');
    var navbarLogoContainerDivNode = document.getElementById('nav-logo-container-id');
 
-if(document.documentElement.scrollTop > 60) //ture if pahe has been scrolled 60 px from the top.
+if(document.documentElement.scrollTop > 30) //ture if pahe has been scrolled 60 px from the top.
    {
 
       navNode[0].classList.add('navShadowScroll'); //adding class navShadowScroll when page is scrolled down.
