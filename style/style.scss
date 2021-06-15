@@ -3,6 +3,9 @@ $bgColor: #212529;
 // Navbar 
 $navLinkHover: rgb(80, 201, 10);
 
+//Carousel
+$carouselImgWidth: 1100px;
+
 body{
     background-color: $bgColor;
 }
@@ -26,3 +29,7 @@ body{
     width: 150px;
     height: 40px;
   }
+
+.carousel-img{
+    width: $carouselImgWidth;
+}
