@@ -1,12 +1,9 @@
 body {
   background-color: #212529;
-  background-image: url(../img/background/bgimage.png);
+  background-image: url(../img/background/bgimage2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.navShadowScroll {
-  box-shadow: 0 2px 6px 0 rgba(136, 133, 133, 0.377);
+  background-size: cover;
 }
 
 .asd {
