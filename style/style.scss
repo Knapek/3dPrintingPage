@@ -28,7 +28,12 @@ body{
 #nav-logo-container-id{
     width: 150px;
     height: 40px;
+    opacity: 0;
+    transition: opacity 1s;
   }
+#nav-logo-container-id.fade{
+    opacity: 1;
+}
 
 .carousel-img{
     width: $carouselImgWidth;
