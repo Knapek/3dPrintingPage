@@ -1,6 +1,6 @@
 //Fade effect of logo and shadow appear at navigation bar
 function fadeEffect() {
-   var navNode = document.getElementsByTagName('nav');
+   var navNode = document.getElementsByTagName('div');
    var navbarLogoContainerDivNode = document.getElementById('nav-logo-container-id');
    var navbarLogoContainerDivNodeStyle = window.getComputedStyle(navbarLogoContainerDivNode);
    var navbarLogoContainerDivNodeStyleOpacity = navbarLogoContainerDivNodeStyle.getPropertyValue('opacity');

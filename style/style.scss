@@ -1,21 +1,33 @@
-$bgColor: #212529;
+$bgColor:#66B032;
+$navButtonsFontColor: #9BD770;
+// $bgColotGradientTo: #1B3409;
+$bgFooterColor: #1B3409;
 
 // Navbar 
-$navLinkHover: rgb(80, 201, 10);
+$navbarBgColor: #375f1b00;
+$navLinkHover: #1B3409;
 
 //Carousel
 $carouselImgWidth: 1100px;
 
 body{
+    // background: linear-gradient(to bottom, $bgColor 0%, $bgColotGradientTo 110%);
     background-color: $bgColor;
-    background-image: url(../img/background/bgimage3.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
+    // background-image: url(../img/background/bgimage4.jpg);
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+}
+.navbar{
+    background-color: $navbarBgColor !important;
 }
 
-.asd{
+
+.footer-container{
+    background-color: $bgFooterColor;
     margin-top: 1500px;
+    color: $bgColor;
 }
 
 //First div container with logo. It has to be moved from top to appear under navbar.
@@ -29,7 +41,7 @@ body{
     width: 150px;
     height: 40px;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
   }
 #nav-logo-container-id.fade{
     opacity: 1;
@@ -37,4 +49,13 @@ body{
 
 .carousel-img{
     width: $carouselImgWidth;
+}
+
+.nav-link, .toggler-border-color{
+    color: $navButtonsFontColor !important;
+    border-color: $navButtonsFontColor !important
+    ;
+}
+.nav-link:hover{
+    color: $navLinkHover !important;
 }
