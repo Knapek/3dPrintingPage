@@ -13,15 +13,19 @@ body {
 }
 
 .logo-container {
-  margin-top: 90px;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.logo-navbar-link {
+  text-decoration: none;
 }
 
 #nav-logo-container-id {
   width: 150px;
   height: 40px;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
 }
 
 #nav-logo-container-id.fade {
@@ -32,7 +36,7 @@ body {
   width: 1100px;
 }
 
-.nav-link, .toggler-border-color {
+.nav-link, .toggler-border-color, .logo-text {
   color: #9BD770 !important;
   border-color: #9BD770 !important;
 }

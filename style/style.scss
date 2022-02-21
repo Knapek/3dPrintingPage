@@ -32,16 +32,21 @@ body{
 
 //First div container with logo. It has to be moved from top to appear under navbar.
 .logo-container{
-    margin-top: 90px;
-    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
+
+.logo-navbar-link{
+    text-decoration: none;
+}
+
 
 //Fixed dimentions container for logo at navigation bar. Logo apear in this place when page is scroled down.
 #nav-logo-container-id{
     width: 150px;
     height: 40px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.2s;
   }
 #nav-logo-container-id.fade{
     opacity: 1;
@@ -51,10 +56,9 @@ body{
     width: $carouselImgWidth;
 }
 
-.nav-link, .toggler-border-color{
+.nav-link, .toggler-border-color, .logo-text{
     color: $navButtonsFontColor !important;
-    border-color: $navButtonsFontColor !important
-    ;
+    border-color: $navButtonsFontColor !important;
 }
 .nav-link:hover{
     color: $navLinkHover !important;
