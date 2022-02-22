@@ -62,3 +62,9 @@ body {
 .title-container {
   color: #1B3409;
 }
+
+.cube-thumbinal img {
+  width: 100px;
+  height: auto;
+  justify-content: center;
+}
