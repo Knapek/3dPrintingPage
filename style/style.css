@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
 body {
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #66B032;
 }
 
 .navbar {
-  background-color: #375f1b00 !important;
+  background-color: #66b032b9 !important;
 }
 
 .footer-container {
@@ -16,6 +18,10 @@ body {
   margin-top: 70px;
   margin-bottom: 20px;
 }
+.logo-container img {
+  width: 120px;
+  height: auto;
+}
 
 .logo-navbar-link {
   text-decoration: none;
@@ -25,7 +31,10 @@ body {
   width: 150px;
   height: 40px;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0s;
+}
+#nav-logo-container-id img {
+  width: 40px;
 }
 
 #nav-logo-container-id.fade {
@@ -43,4 +52,13 @@ body {
 
 .nav-link:hover {
   color: #1B3409 !important;
+}
+
+.value-container {
+  background-color: #EBF7E3;
+  color: #1B3409;
+}
+
+.title-container {
+  color: #1B3409;
 }

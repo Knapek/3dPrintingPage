@@ -1,18 +1,24 @@
-$bgColor:#66B032;
-$navButtonsFontColor: #9BD770;
-// $bgColotGradientTo: #1B3409;
-$bgFooterColor: #1B3409;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
-// Navbar 
-$navbarBgColor: #375f1b00;
-$navLinkHover: #1B3409;
+
+$bgBodyColor:#66B032;
+$bgFooterColor: #1B3409;
+$bgValueContainerColor: #EBF7E3;
+
+$fontColorValueContainer: #1B3409;
+
+//Navbar
+$navbarbgBodyColor: #66b032b9; //semitransparent
+$navButtonsFontColor: #9BD770;
+$navLinkHover: $fontColorValueContainer;
 
 //Carousel
 $carouselImgWidth: 1100px;
 
 body{
-    // background: linear-gradient(to bottom, $bgColor 0%, $bgColotGradientTo 110%);
-    background-color: $bgColor;
+    font-family: 'Source Sans Pro', sans-serif;
+    // background: linear-gradient(to bottom, $bgBodyColor 0%, $bgColotGradientTo 110%);
+    background-color: $bgBodyColor;
 
     // background-image: url(../img/background/bgimage4.jpg);
     // background-repeat: no-repeat;
@@ -20,33 +26,37 @@ body{
     // background-size: cover;
 }
 .navbar{
-    background-color: $navbarBgColor !important;
+    background-color: $navbarbgBodyColor !important;
 }
-
 
 .footer-container{
     background-color: $bgFooterColor;
     margin-top: 1500px;
-    color: $bgColor;
+    color: $bgBodyColor;
 }
 
 //First div container with logo. It has to be moved from top to appear under navbar.
 .logo-container{
     margin-top: 70px;
     margin-bottom: 20px;
+    img{
+        width: 120px;
+        height: auto;
+    }
 }
 
 .logo-navbar-link{
     text-decoration: none;
 }
-
-
 //Fixed dimentions container for logo at navigation bar. Logo apear in this place when page is scroled down.
 #nav-logo-container-id{
     width: 150px;
     height: 40px;
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0s;
+    img{
+        width: 40px;
+    }
   }
 #nav-logo-container-id.fade{
     opacity: 1;
@@ -62,4 +72,12 @@ body{
 }
 .nav-link:hover{
     color: $navLinkHover !important;
+}
+
+.value-container{
+    background-color: $bgValueContainerColor;
+    color: $fontColorValueContainer;
+}
+.title-container{
+    color: $fontColorValueContainer;
 }
