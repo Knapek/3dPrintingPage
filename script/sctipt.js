@@ -31,4 +31,10 @@ document.addEventListener('scroll',function(){
    fadeEffect();
 });
 
+//Hiding toggle menu after nav item clic (mobile)
+const navLinks = document.querySelectorAll('.nav-item');
+const menuToggle = document.getElementById('navbarSupportedContent')
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { menuToggle.classList.remove('show')})
+});
 
